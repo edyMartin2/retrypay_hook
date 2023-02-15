@@ -1,7 +1,7 @@
 {
-  "name": "orders-feed-example",
-  "vendor": "vtex",
-  "version": "0.2.1",
+  "name": "orders-feed",
+  "vendor": "retrypaypartnermx",
+  "version": "0.0.1",
   "title": "Orders Feed Example",
   "description": "Boilerplate app for receving order status events",
   "categories": [],
@@ -20,6 +20,44 @@
     },
     {
       "name": "colossus-write-logs"
+    },
+    {
+      "name": "OMSViewer"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.retrypay.dev",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.retrypay.app",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/oms/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/oms/*"
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
