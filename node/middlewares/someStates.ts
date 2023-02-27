@@ -1,7 +1,7 @@
 import RetrypayService from "../services/Retrypay"
 import Vtex from "../services/Vtex"
 
-export async function someStates(ctx:StatusChangeContext , next: () => Promiseiany>) {
+export async function someStates(ctx:StatusChangeContext , next: () => Promise<any>) {
   const {
     clients: { oms },
   } = ctx
